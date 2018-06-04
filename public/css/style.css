@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /* =======================================================
 *
 * 	Template Style 
@@ -48,6 +49,7 @@ body {
 }
 
 a {
+  font-weight: 400;
   color: #cabcab;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -197,7 +199,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li a {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 14px;
   padding: 30px 10px;
   color: rgba(0, 0, 0, 0.9);
   -webkit-transition: 0.5s;
