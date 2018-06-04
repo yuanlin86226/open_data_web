@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BladeController@index');
+Route::get('/about', 'BladeController@about');
+Route::get('/work', 'BladeController@work');
+Route::get('/portfolio_detail', 'BladeController@portfolio_detail');
+Route::get('/contact', 'BladeController@contact');
