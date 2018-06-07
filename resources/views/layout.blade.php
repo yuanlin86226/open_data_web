@@ -73,7 +73,7 @@
                             <li class="has-dropdown">
                                 <a href="#">文書課程</a>
                                 <ul class="dropdown">
-                                    <li><a href="work">獨立書店</a></li>
+                                    <li><a href="work?keyword=bookstore">獨立書店</a></li>
                                     <li><a href="work">特色圖書館</a></li>
                                     <li><a href="work">文化部研習課程</a></li>
                                 </ul>
