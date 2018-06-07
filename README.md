@@ -33,6 +33,7 @@ foreach($infos as $info) {
 ＃其他
 ```
 版型自己生，剩下自己看
+請使用php7
 
 啟動 127.0.0.1:8000
 php artisan serve
