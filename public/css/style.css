@@ -8,7 +8,7 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style #88755e
 *
 * ======================================================= */
 body {
@@ -50,13 +50,13 @@ body {
 
 a {
   font-weight: 400;
-  color: #cabcab;
+  color: #88755e;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #cabcab;
+  color: #88755e;
   outline: none;
   text-decoration: none;
 }

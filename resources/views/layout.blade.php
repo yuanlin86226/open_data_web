@@ -74,22 +74,22 @@
                                 <a href="#">文書課程</a>
                                 <ul class="dropdown">
                                     <li><a href="work?keyword=bookstore">獨立書店</a></li>
-                                    <li><a href="work">特色圖書館</a></li>
-                                    <li><a href="work">文化部研習課程</a></li>
+                                    <li><a href="work?keyword=library">特色圖書館</a></li>
+                                    <li><a href="work?keyword=course">文化部研習課程</a></li>
                                 </ul>
                             </li>
                             <li class="has-dropdown">
                                 <a href="#">視覺藝術</a>
                                 <ul class="dropdown">
-                                    <li><a href="work">展演空間</a></li>
-                                    <li><a href="work">展覽資訊</a></li>
+                                    <li><a href="work?keyword=space">展演空間</a></li>
+                                    <li><a href="work?keyword=exhibition">展覽資訊</a></li>
                                 </ul>
                             </li>
                             <li class="has-dropdown">
                                 <a href="#">音樂饗宴</a>
                                 <ul class="dropdown">
-                                    <li><a href="work">獨立音樂</a></li>
-                                    <li><a href="work">音樂表演資訊</a></li>
+                                    <li><a href="work?keyword=music">獨立音樂</a></li>
+                                    <li><a href="work?keyword=performance">音樂表演資訊</a></li>
                                 </ul>
                             </li>
                             <li class="has-dropdown">
