@@ -15,7 +15,7 @@
 
 				@foreach( $data['infos'] as $index => $info)
 					<div class="col-md-4 text-center animate-box">
-						<a class="work" href="portfolio_detail">
+						<a class="work" href="portfolio_detail?keyword={{$_GET['keyword']}}&title={{ $info['name'] }}">
 							<div class="work-grid" style="background-image:url('{{ $info['representImage'] }}');">
 								<div class="inner">
 									<div class="desc">
