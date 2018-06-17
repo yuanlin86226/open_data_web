@@ -6,9 +6,9 @@
 		<div class="container">
 			<div class="row top-line animate-box">
 				<div class="col-md-6 col-md-offset-3 col-md-push-2 text-left fh5co-heading">
-					<h2>Say Hello</h2>
-					<h3>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+					<h2>聯絡我們</h2>
+					<h3>有什麼要跟我說的嗎？</h3>
+					<p>如果你有什麼想跟我說的？雖然我不會看信箱但或許我改天會看到。<br>如果你很急，那別找我比較好＾＿＾</p>
 				</div>
 			</div>
 			<div class="row">
@@ -17,10 +17,10 @@
 						<div class="fh5co-contact-info">
 							<h3>Contact Information</h3>
 							<ul>
-								<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-								<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
-								<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-								<li class="url"><a href="http://freehtml5.co">FreeHTML5.co</a></li>
+								<li class="address">不告訴你</li>
+								<li class="phone">還是不告訴你</li>
+								<li class="email">就是不告訴你</li>
+								<li class="url">沒有</li>
 							</ul>
 						</div>
 					</div>
