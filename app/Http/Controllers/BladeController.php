@@ -24,6 +24,12 @@ class BladeController extends Controller
     {
         $keyword = $_GET['keyword'];
         $data = array();
+        $title = "";
+
+
+        if (isset($_GET['title'])) {
+            $title = $_GET['title'];
+        }
 
         if ($keyword === 'bookstore') {
             $data['title'] = '獨立書店';
@@ -35,15 +41,29 @@ class BladeController extends Controller
 
             $infos_data = array();
             $i = 0;
-            foreach($infos as $info) {
-                if ($info['representImage']!="") {
-                    $infos_data[$i]['name'] = (string)$info['name'];
-                    $infos_data[$i]['representImage'] = (string)$info['representImage'];
-                    $infos_data[$i]['cityName'] = (string)$info['cityName'];
+            if ($title!="") {
+                foreach($infos as $info) {
+                    if ($info['representImage']!="" && preg_match('/'.$title.'/i',(string)$info['name'])) {
+                        $infos_data[$i]['name'] = (string)$info['name'];
+                        $infos_data[$i]['representImage'] = (string)$info['representImage'];
+                        $infos_data[$i]['cityName'] = (string)$info['cityName'];
 
-                    $i++;
+                        $i++;
+                    }
+                }
+            } else {
+                foreach($infos as $info) {
+                    if ($info['representImage']!="") {
+                        $infos_data[$i]['name'] = (string)$info['name'];
+                        $infos_data[$i]['representImage'] = (string)$info['representImage'];
+                        $infos_data[$i]['cityName'] = (string)$info['cityName'];
+
+                        $i++;
+                    }
                 }
             }
+
+            
 
         } elseif ($keyword === 'library') {
             $data['title'] = '特色圖書館';
@@ -55,13 +75,25 @@ class BladeController extends Controller
             
             $infos_data = array();
             $i = 0;
-            foreach($infos as $info) {
-                if ($info['representImage']!="") {
-                    $infos_data[$i]['name'] = (string)$info['name'];
-                    $infos_data[$i]['representImage'] = (string)$info['representImage'];
-                    $infos_data[$i]['cityName'] = (string)$info['cityName'];
+            if ($title!="") {
+                foreach($infos as $info) {
+                    if ($info['representImage']!="" && preg_match('/'.$title.'/i',(string)$info['name'])) {
+                        $infos_data[$i]['name'] = (string)$info['name'];
+                        $infos_data[$i]['representImage'] = (string)$info['representImage'];
+                        $infos_data[$i]['cityName'] = (string)$info['cityName'];
 
-                    $i++;
+                        $i++;
+                    }
+                }
+            } else {
+                foreach($infos as $info) {
+                    if ($info['representImage']!="") {
+                        $infos_data[$i]['name'] = (string)$info['name'];
+                        $infos_data[$i]['representImage'] = (string)$info['representImage'];
+                        $infos_data[$i]['cityName'] = (string)$info['cityName'];
+
+                        $i++;
+                    }
                 }
             }
 
@@ -75,13 +107,25 @@ class BladeController extends Controller
             
             $infos_data = array();
             $i = 0;
-            foreach($infos as $info) {
-                if ($info['imageUrl']!="") {
-                    $infos_data[$i]['name'] = (string)$info['title'];
-                    $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
-                    $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
+            if ($title!="") {
+                foreach($infos as $info) {
+                    if ($info['imageUrl']!="" && preg_match('/'.$title.'/i',(string)$info['title'])) {
+                        $infos_data[$i]['name'] = (string)$info['title'];
+                        $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
+                        $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
 
-                    $i++;
+                        $i++;
+                    }
+                }
+            } else {
+                foreach($infos as $info) {
+                    if ($info['imageUrl']!="") {
+                        $infos_data[$i]['name'] = (string)$info['title'];
+                        $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
+                        $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
+
+                        $i++;
+                    }
                 }
             }
 
@@ -95,13 +139,25 @@ class BladeController extends Controller
             
             $infos_data = array();
             $i = 0;
-            foreach($infos as $info) {
-                if ($info['representImage']!="") {
-                    $infos_data[$i]['name'] = (string)$info['name'];
-                    $infos_data[$i]['representImage'] = (string)$info['representImage'];
-                    $infos_data[$i]['cityName'] = (string)$info['cityName'];
+            if ($title!="") {
+                foreach($infos as $info) {
+                    if ($info['representImage']!="" && preg_match('/'.$title.'/i',(string)$info['name'])) {
+                        $infos_data[$i]['name'] = (string)$info['name'];
+                        $infos_data[$i]['representImage'] = (string)$info['representImage'];
+                        $infos_data[$i]['cityName'] = (string)$info['cityName'];
 
-                    $i++;
+                        $i++;
+                    }
+                }
+            } else {
+                foreach($infos as $info) {
+                    if ($info['representImage']!="") {
+                        $infos_data[$i]['name'] = (string)$info['name'];
+                        $infos_data[$i]['representImage'] = (string)$info['representImage'];
+                        $infos_data[$i]['cityName'] = (string)$info['cityName'];
+
+                        $i++;
+                    }
                 }
             }
 
@@ -115,13 +171,25 @@ class BladeController extends Controller
 
             $infos_data = array();
             $i = 0;
-            foreach($infos as $info) {
-                if ($info['imageUrl']!="") {
-                    $infos_data[$i]['name'] = (string)$info['title'];
-                    $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
-                    $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
+            if ($title!="") {
+                foreach($infos as $info) {
+                    if ($info['imageUrl']!="" && preg_match('/'.$title.'/i',(string)$info['title'])) {
+                        $infos_data[$i]['name'] = (string)$info['title'];
+                        $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
+                        $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
 
-                    $i++;
+                        $i++;
+                    }
+                }
+            } else {
+                foreach($infos as $info) {
+                    if ($info['imageUrl']!="") {
+                        $infos_data[$i]['name'] = (string)$info['title'];
+                        $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
+                        $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
+
+                        $i++;
+                    }
                 }
             }
             
@@ -135,15 +203,29 @@ class BladeController extends Controller
 
             $infos_data = array();
             $i = 0;
-            foreach($infos as $info) {
-                if ($info['imageUrl']!="") {
-                    $infos_data[$i]['name'] = (string)$info['title'];
-                    $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
-                    $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
 
-                    $i++;
+            if ($title!="") {
+                 foreach($infos as $info) {
+                    if ($info['imageUrl']!="" && preg_match('/'.$title.'/i',(string)$info['title'])) {
+                        $infos_data[$i]['name'] = (string)$info['title'];
+                        $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
+                        $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
+
+                        $i++;
+                    }
+                }
+            } else {
+                foreach($infos as $info) {
+                    if ($info['imageUrl']!="") {
+                        $infos_data[$i]['name'] = (string)$info['title'];
+                        $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
+                        $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
+
+                        $i++;
+                    }
                 }
             }
+            
 
         } elseif ($keyword === 'performance') {
             $data['title'] = '音樂表演資訊';
@@ -155,13 +237,25 @@ class BladeController extends Controller
 
             $infos_data = array();
             $i = 0;
-            foreach($infos as $info) {
-                if ($info['imageUrl']!="") {
-                    $infos_data[$i]['name'] = (string)$info['title'];
-                    $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
-                    $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
+            if ($title!="") {
+                foreach($infos as $info) {
+                    if ($info['imageUrl']!="" && preg_match('/'.$title.'/i',(string)$info['title'])) {
+                        $infos_data[$i]['name'] = (string)$info['title'];
+                        $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
+                        $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
 
-                    $i++;
+                        $i++;
+                    }
+                }
+            } else {
+                foreach($infos as $info) {
+                    if ($info['imageUrl']!="") {
+                        $infos_data[$i]['name'] = (string)$info['title'];
+                        $infos_data[$i]['representImage'] = (string)$info['imageUrl'];
+                        $infos_data[$i]['cityName'] = (string)$info->showInfo->element['locationName'];
+
+                        $i++;
+                    }
                 }
             }
         }
